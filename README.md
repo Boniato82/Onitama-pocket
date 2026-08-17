@@ -7,11 +7,10 @@ Win by capturing the enemy Master (with any of your pieces) … or by reaching r
 You also lose if your Master is captured or opponent Master reach your temple, so be careful!
 
 **Features**
-    Classic Onitama rules (16 cards of  the based game, randomly chosen at the beginning of each game)
-    Turn-based tactical gameplay
-    AI opponent with strategic behavior 
-        (3 difficulty levels: student (easy) < master (normal) < legend (hard))
-    2 players mode: you can play with a friend...
+    * Classic Onitama rules (16 cards of  the based game, randomly chosen at the beginning of each game)
+    * Turn-based tactical gameplay
+    * AI opponent with strategic behavior (3 difficulty levels: student (easy) < master (normal) < legend (hard))
+    * 2 players mode: you can play with a friend...
         ... on the same device (hotseat / Pass-and-play )
         ... with 2 devices, 2 games and a cable link (game link mode)
 
