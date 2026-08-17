@@ -1,0 +1,550 @@
+ASxxxx Linker V03.00/V05.40 + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+.  .ABS.               00000000    00000000 =           0. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000000  .__.ABS.  |    00000000  _rRAMG    |    00000000  l__BASE  
+     00000000  l__BSS    |    00000000  l__CABS   |    00000000  l__CODE_0
+     00000000  l__DABS   |    00000000  l__FONT_H |    00000000  l__HEADER
+     00000000  l__HEADER |    00000000  l__HEADER |    00000000  l__HEAP  
+     00000000  l__HEAP_E |    00000000  l__HRAM   |    00000000  l__LIT   
+     00000000  s__CABS   |    00000000  s__DABS   |    00000000  s__FONT_H
+     00000000  s__FONT_H |    00000000  s__HEADER |    00000000  s__HEADER
+     00000000  s__HEADER |    00000000  s__HEADER |    00000000  s__HEADER
+     00000000  s__HEADER |    00000000  s__HEADER |    00000000  s__HEADER
+     00000000  s__HEADER |    00000000  s__HEADER |    00000000  s__HEADER
+     00000000  s__HEADER |    00000000  s__HEADER |    00000000  s__HEADER
+     00000000  s__HEADER |    00000000  s__HEADER |    00000000  s__HEADER
+     00000000  s__HEADER |    00000000  s__HEADER |    00000000  s__HEADER
+     00000000  s__HEADER |    00000000  s__HEADER |    00000000  s__HEADER
+     00000000  s__HRAM   |    00000000  s__HRAM12 |    00000001  l__GSFINA
+     00000001  l__HEADER |    00000001  l__HEADER |    00000001  l__HEADER
+     00000001  l__HEADER |    00000001  l__HEADER |    00000001  l__HEADER
+     00000001  l__HEADER |    00000002  l__HEADER |    00000002  l__HEADER
+     00000002  l__HEADER |    00000003  l__FONT_H |    00000003  l__HEADER
+     00000003  l__HEADER |    00000003  l__HRAM12 |    00000005  l__HEADER
+     00000006  l__HEADER |    00000007  l__HEADER |    00000008  l__HEADER
+     00000008  l__HEADER |    00000025  l__GSINIT |    00000030  l__HEADER
+     00000060  l__HEADER |    00000060  l__INITIA |    00000060  l__INITIA
+     000000AB  l__HEADER |    00000200  s__CODE   |    000005A7  l__DATA  
+     000008ED  l__HOME   |    00002000  _rROMB0   |    00003000  _rROMB1  
+     00004000  _rRAMB    |    00006F79  l__CODE   |    00007179  s__HOME  
+     00007A66  s__BASE   |    00007A66  s__CODE_0 |    00007A66  s__INITIA
+     00007A66  s__LIT    |    00007AC6  s__GSINIT |    00007AEB  s__GSFINA
+     00008000  __VRAM    |    00008000  __VRAM800 |    00008800  __VRAM880
+     00009000  __VRAM900 |    00009800  __SCRN0   |    00009C00  __SCRN1  
+     0000A000  __SRAM    |    0000C000  __RAM     |    0000C000  _shadow_O
+     0000C0A0  s__DATA   |    0000C647  s__BSS    |    0000C647  s__INITIA
+     0000C6A7  s__HEAP   |    0000C6A7  s__HEAP_E |    0000D000  __RAMBANK
+     0000E000  .STACK    |    0000FE00  __OAMRAM  |    0000FF00  _P1_REG  
+     0000FF00  __IO      |    0000FF01  _SB_REG   |    0000FF02  _SC_REG  
+     0000FF04  _DIV_REG  |    0000FF05  _TIMA_REG |    0000FF06  _TMA_REG 
+     0000FF07  _TAC_REG  |    0000FF0F  _IF_REG   |    0000FF10  _NR10_REG
+     0000FF11  _NR11_REG |    0000FF12  _NR12_REG |    0000FF13  _NR13_REG
+     0000FF14  _NR14_REG |    0000FF16  _NR21_REG |    0000FF17  _NR22_REG
+     0000FF18  _NR23_REG |    0000FF19  _NR24_REG |    0000FF1A  _NR30_REG
+     0000FF1B  _NR31_REG |    0000FF1C  _NR32_REG |    0000FF1D  _NR33_REG
+     0000FF1E  _NR34_REG |    0000FF20  _NR41_REG |    0000FF21  _NR42_REG
+     0000FF22  _NR43_REG |    0000FF23  _NR44_REG |    0000FF24  _NR50_REG
+     0000FF25  _NR51_REG |    0000FF26  _NR52_REG |    0000FF30  _AUD3WAVE
+     0000FF30  _PCM_SAMP |    0000FF30  __AUD3WAV |    0000FF40  _LCDC_REG
+     0000FF41  _STAT_REG |    0000FF42  _SCY_REG  |    0000FF43  _SCX_REG 
+     0000FF44  _LY_REG   |    0000FF45  _LYC_REG  |    0000FF46  _DMA_REG 
+     0000FF47  _BGP_REG  |    0000FF48  _OBP0_REG |    0000FF49  _OBP1_REG
+     0000FF4A  _WY_REG   |    0000FF4B  _WX_REG   |    0000FF4D  _KEY1_REG
+     0000FF4F  _VBK_REG  |    0000FF51  _HDMA1_RE |    0000FF52  _HDMA2_RE
+ASxxxx Linker V03.00/V05.40 + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+.  .ABS.               00000000    00000000 =           0. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     0000FF53  _HDMA3_RE |    0000FF54  _HDMA4_RE |    0000FF55  _HDMA5_RE
+     0000FF56  _RP_REG   |    0000FF68  _BCPS_REG |    0000FF69  _BCPD_REG
+     0000FF6A  _OCPS_REG |    0000FF6B  _OCPD_REG |    0000FF70  _SVBK_REG
+     0000FF76  _PCM12_RE |    0000FF77  _PCM34_RE |    0000FF80  .refresh_
+     0000FF80  __HRAM    |    0000FFFF  _IE_REG  
+ASxxxx Linker V03.00/V05.40 + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_CODE                  00000200    00006F79 =       28537. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000200  _cargar_g |    0000020C  _casillas |    00000225  _carta_ti
+     00000229  _TIGER    |    00000230  _carta_dr |    00000238  _DRAGON  
+     0000023F  _carta_el |    00000247  _ELEPHANT |    0000024E  _carta_mo
+     00000256  _MONKEY   |    0000025D  _carta_cr |    00000263  _CRAB    
+     0000026A  _carta_bo |    00000270  _BOAR     |    00000277  _carta_ma
+     0000027D  _MANTIS   |    00000284  _carta_cr |    0000028A  _CRANE   
+     00000291  _carta_fr |    00000297  _FROG     |    0000029E  _carta_go
+     000002A6  _GOOSE    |    000002AD  _carta_ho |    000002B3  _HORSE   
+     000002BA  _carta_ee |    000002C0  _EEL      |    000002C7  _carta_ra
+     000002CD  _RABBIT   |    000002D4  _carta_ro |    000002DC  _ROOSTER 
+     000002E3  _carta_ox |    000002E9  _OX       |    000002F0  _carta_co
+     000002F6  _COBRA    |    000002FD  _titulo_t |    000008FD  _titulo_m
+     00000A65  _seleccio |    00000CA5  _seleccio |    00000CE1  _seleccio
+     00000EE1  _seleccio |    00000F1D  _seleccio |    0000111D  _seleccio
+     00001159  _sprite_s |    00001169  _sprite_s |    00001171  _sprite_s
+     00001173  _fondo_ti |    00001233  _fondo_ma |    0000139B  _fondo_va
+     000013DB  _fondo_va |    000013DF  _fondo_va |    000013EF  _fondo_va
+     000013FF  _blue_win |    0000155F  _red_wins |    000016BF  _wins_map
+     000016D7  _peon_roj |    00001717  _peon_roj |    0000171B  _master_r
+     0000175B  _master_r |    0000175F  _peon_azu |    0000179F  _peon_azu
+     000017A3  _master_a |    000017E3  _master_a |    000017E7  _carta_ma
+     000017F7  _tiger_ti |    000018F7  _tiger2_t |    000019F7  _dragon_t
+     00001AF7  _dragon2_ |    00001BF7  _crab_til |    00001CF7  _crab2_ti
+     00001DF7  _elephant |    00001EF7  _elephant |    00001FF7  _monkey_t
+     000020F7  _monkey2_ |    000021F7  _crane_ti |    000022F7  _crane2_t
+     000023F7  _boar_til |    000024F7  _boar2_ti |    000025F7  _mantis_t
+     000026F7  _mantis2_ |    000027F7  _frog_til |    000028F7  _frog2_ti
+     000029F7  _goose_ti |    00002AF7  _goose2_t |    00002BF7  _horse_ti
+     00002CF7  _horse2_t |    00002DF7  _eel_tile |    00002EF7  _eel2_til
+     00002FF7  _rabbit_t |    000030F7  _rabbit2_ |    000031F7  _rooster_
+     000032F7  _rooster2 |    000033F7  _ox_tiles |    000034F7  _ox2_tile
+     000035F7  _cobra_ti |    000036F7  _cobra2_t |    000037F7  _sprite_s
+     00003837  _sprite_s |    0000384B  _sprite_s |    0000384D  _sprite_s
+     000038FD  _sprite_s |    00003941  _sprite_s |    00003943  _sprite_l
+     00003953  _sprite_l |    00003967  _sprite_l |    00003969  _pal_bkg_
+     00003971  _titulo_p |    00003979  _rojo_pal |    00003981  _azul_pal
+     00003989  _verde_pa |    00003991  _naranja_ |    00003999  _azul2_pa
+     000039A1  _rojo2_pa |    000039A9  _sprite_m |    000039B1  _sprite_m
+     000039B9  _sprite_m |    000039C1  _sprite_m |    000039C9  _sprite_m
+     000039D1  _fondo_pa |    000039D9  _cartas_a |    000039E1  _cartas_r
+     000039E9  _fondo_ca |    000039F1  _rojo     |    000039F5  _azul    
+     000039F9  _sprite_c |    00003A01  _sprite_c |    00003A09  _aplicar_
+     00003B9C  _cargar_e |    00003D03  _actualiz |    00003ECC  _posicion
+     00004044  _cargar_c |    000040C6  _delay_fr |    000040D0  _init_cgb
+     000040F3  _intro    |    0000417A  _pantalla |    00004346  _seleccio
+     00004547  _inicio_p |    0000460D  _mezclar_ |    0000465F  _juego   
+     0000478D  _handle_i |    0000483A  _movimien |    0000489A  _actualiz
+     00004994  _procesar |    00004C4A  _comproba |    00004CCD  _es_turno
+     00004CDF  _main     |    00004D30  _reseteo_ |    00004E52  _ejecutar
+     00005449  _aplicar_ |    000054D9  _master_r |    0000560C  _copiar_t
+ASxxxx Linker V03.00/V05.40 + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_CODE                  00000200    00006F79 =       28537. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00005619  _comproba |    000056AC  _rival_pu |    00005763  _generar_
+     000059EE  _generar_ |    00005C63  _evaluar_ |    00005FBC  _ordenar_
+     000061E5  _ejecutar |    0000665D  _pieza_ro |    00006748  _evaluar_
+     00006A4D  _sfx_move |    00006A6D  _sfx_move |    00006A8A  _sfx_capt
+     00006AAA  _sfx_vict |    00006ACA  _sfx_derr |    00006AEA  _sfx_sabl
+     00006B26  _menu_2pl |    00006C71  _menu_lin |    00006D43  _link_syn
+     00006DC7  _link_env |    00006E54  _link_rec |    00006F87  _set_spri
+     00006F8C  _set_bkg_ |    00006F8F  .set_pale |    00006FAE  _set_spri
+     00006FB3  _set_bkg_ |    00006FB6  .set_pale |    00006FD2  _send_byt
+     00006FE5  _receive_ |    00006FF6  _nowait_i |    00006FFD  ___move_m
+     0000703A  ___memcpy |    0000703A  _memcpy   |    0000706C  _cpu_slow
+     00007087  _cpu_fast |    0000708E  __divsuch |    00007094  __modsuch
+     0000709D  __divusch |    000070A6  __modusch |    000070B2  __divscha
+     000070B7  __modscha |    000070BE  __divsint |    000070C7  __modsint
+     000070D3  __divucha |    000070D8  __moducha |    000070DF  __divuint
+     000070E8  __moduint |    000070F4  .div8     |    000070F4  .mod8    
+     000070FC  .div16    |    000070FC  .mod16    |    00007132  .divu8   
+     00007132  .modu8    |    00007135  .divu16   |    00007135  .modu16  
+     00007175  ___crlf  
+ASxxxx Linker V03.00/V05.40 + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER0               00000000    00000001 =           1. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000020  .call_hl 
+ASxxxx Linker V03.00/V05.40 + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER1               00000000    00000005 =           5. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000028  .MemsetSm
+ASxxxx Linker V03.00/V05.40 + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER2               00000000    00000007 =           7. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000030  .MemcpySm
+ASxxxx Linker V03.00/V05.40 + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER3               00000000    00000008 =           8. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER4               00000000    00000060 =          96. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000080  .int      |    0000008F  _wait_int |    0000009C  __standar
+     000000AB  _refresh_ |    000000CC  _set_inte
+ASxxxx Linker V03.00/V05.40 + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER5               00000000    00000001 =           1. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER6               00000000    00000002 =           2. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER7               00000000    00000030 =          48. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER8               00000000    00000006 =           6. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER9               00000000    00000003 =           3. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADERa               00000000    00000001 =           1. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADERb               00000000    00000001 =           1. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADERc               00000000    00000001 =           1. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADERd               00000000    00000002 =           2. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADERe               00000000    00000001 =           1. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADERf               00000000    00000001 =           1. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 21.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER10              00000000    00000002 =           2. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 22.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER11              00000000    000000AB =         171. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000150  .reset    |    00000150  _reset    |    00000157  .code_sta
+     000001B9  _exit     |    000001BD  .wait_vbl |    000001BD  _vsync   
+     000001BD  _wait_vbl |    000001CD  .remove_V |    000001CD  _remove_V
+     000001D0  .remove_i |    000001ED  .add_VBL  |    000001ED  _add_VBL 
+     000001F0  .add_int 
+ASxxxx Linker V03.00/V05.40 + sdld,  page 23.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HOME                  00007179    000008ED =        2285. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00007179  .memset_s |    00007182  .memcpy_s |    0000719F  .display_
+     0000719F  _display_ |    000071B7  _rand     |    000071B7  _randw   
+     000071E2  _initrand |    000071E4  .initrand |    000071ED  .serial_I
+     00007218  .add_SIO  |    00007218  _add_SIO  |    0000721E  .remove_S
+     0000721E  _remove_S |    00007224  _set_tile |    00007229  _set_bkg_
+     00007229  _set_win_ |    00007231  _set_spri |    00007261  _font_loa
+     00007268  font_load |    000072B0  font_copy |    000072E6  font_set 
+     000072F3  .put_char |    0000730B  .out_char |    00007311  .del_char
+     00007367  _putchar  |    00007370  _setchar  |    00007379  _font_loa
+     00007387  _font_set |    00007396  _font_ini |    000073B5  .cls     
+     000073B5  _cls      |    000073D7  _gotoxy   |    000073E2  _posx    
+     000073F3  _posy     |    0000741B  .cr_curs  |    00007430  .adv_curs
+     0000748C  .tmode    |    000074A9  .tmode_ou |    000074B2  _fill_bkg
+     000074C4  .padup    |    000074C4  _waitpadu |    000074D4  .jpad    
+     000074D4  _joypad   |    000074FC  _waitpad  |    000074FD  .wait_pad
+     00007504  _color    |    00007504  _set_1bpp |    00007513  _puts    
+     00007536  .drawing_ |    00007553  _font_ibm |    00007934  .add_LCD 
+     00007934  _add_LCD  |    0000793A  .remove_L |    0000793A  _remove_L
+     00007940  .set_xy_w |    00007949  .set_xy_b |    00007958  .set_xy_t
+     0000799C  _set_bkg_ |    000079B0  _set_bkg_ |    000079B0  _set_win_
+     000079B8  _set_spri |    00007A10  .fill_rec |    00007A19  .fill_rec
+ASxxxx Linker V03.00/V05.40 + sdld,  page 24.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_INITIALIZER           00007A66    00000060 =          96. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 25.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_GSINIT                00007AC6    00000025 =          37. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00007AC6  gsinit   
+ASxxxx Linker V03.00/V05.40 + sdld,  page 26.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_GSFINAL               00007AEB    00000001 =           1. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 27.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_DATA                  0000C0A0    000005A7 =        1447. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     0000C0A0  __cpu     |    0000C0A1  __is_GBA  |    0000C0A2  .mode    
+     0000C0A3  .sys_time |    0000C0A3  _sys_time |    0000C0A5  .int_0x40
+     0000C0B1  _i        |    0000C0B2  _j        |    0000C0B3  _r       
+     0000C0B4  _k        |    0000C0B5  _temp     |    0000C0B6  _contador
+     0000C0B8  _input    |    0000C0B9  _modo_jue |    0000C0BA  _destino 
+     0000C0BB  _cursor_x |    0000C0BC  _cursor_y |    0000C0BD  _px      
+     0000C0BE  _py       |    0000C0BF  _x        |    0000C0C0  _y       
+     0000C0C1  _selector |    0000C0C2  _selector |    0000C0C3  _rng_seed
+     0000C0C5  _posicion |    0000C0C6  _posicion |    0000C0C7  _movimien
+     0000C18F  _m        |    0000C194  _movimien |    0000C25C  _lista_ro
+     0000C324  _lista_az |    0000C3EC  _mejor_mo |    0000C3F1  _cartas_p
+     0000C3FB  _carta_ac |    0000C3FD  _origen_x |    0000C3FE  _origen_y
+     0000C3FF  _destino_ |    0000C400  _destino_ |    0000C401  _indice_c
+     0000C402  _pieza    |    0000C403  _tile_x   |    0000C404  _tile_y  
+     0000C405  _turno_de |    0000C406  _profundi |    0000C407  _encontra
+     0000C408  _mx       |    0000C409  _my       |    0000C40A  _peligro_
+     0000C40B  _peligro_ |    0000C40C  _tablero_ |    0000C425  _tablero_
+     0000C43E  _tablero_ |    0000C457  _tablero_ |    0000C470  _tablero_
+     0000C489  _mejor_va |    0000C48B  _alfa_glo |    0000C48D  _beta_glo
+     0000C48F  _total_ro |    0000C490  _total_az |    0000C491  _era_capt
+     0000C492  _era_capt |    0000C493  _cartas_s |    0000C49D  _cartas_s
+     0000C4A7  _cartas_s |    0000C4B1  _carta_te |    0000C4B3  _mov_azul
+     0000C4B8  _mov_rojo |    0000C4BD  _punt_sim |    0000C4BF  _mejor_ni
+     0000C4C1  _mejor_ni |    0000C4C3  _resultad |    0000C4C4  _nn_sim  
+     0000C4C5  _ord_i    |    0000C4C6  _ord_j    |    0000C4C7  _ord_piez
+     0000C4C8  _ord_dest |    0000C4C9  _priorida |    0000C4F1  _ord_temp
+     0000C4F6  _ord_temp |    0000C4F7  _gen_dx   |    0000C4F8  _gen_dy  
+     0000C4F9  _gen_dest |    0000C4FA  _gen_dest |    0000C4FB  _gen_dest
+     0000C4FC  _gen_cart |    0000C4FE  _gen_cant |    0000C4FF  _cantidad
+     0000C500  _pieza_de |    0000C501  _es_captu |    0000C502  _dx      
+     0000C503  _dy       |    0000C504  _otra_car |    0000C505  _peor_ata
+     0000C507  _mx_local |    0000C508  _my_local |    0000C509  _copiar_t
+     0000C50A  _copiar_t |    0000C50B  _hay_mast |    0000C50C  _hay_mast
+     0000C50D  _x_sim    |    0000C50E  _y_sim    |    0000C50F  _destino_
+     0000C510  _destino_ |    0000C511  _pieza_mo |    0000C512  _k_puede_
+     0000C513  _pieza_en |    0000C514  _mal_inte |    0000C515  _link_ox 
+     0000C516  _link_oy  |    0000C517  _link_dx  |    0000C518  _link_dy 
+     0000C519  _link_car |    0000C51A  _atributo |    0000C530  _atributo
+     0000C546  _atributo |    0000C54E  _atributo |    0000C556  _atributo
+     0000C55E  _atributo |    0000C566  _atributo |    0000C58E  _atributo
+     0000C5B6  _atributo |    0000C5C6  _atributo |    0000C5D6  _atributo
+     0000C5E6  _atributo |    0000C5FE  _atributo |    0000C616  ___rand_s
+     0000C618  __io_out  |    0000C619  __io_in   |    0000C61A  __io_stat
+     0000C61B  .int_0x58 |    0000C625  font_curr |    0000C628  font_firs
+     0000C629  font_tabl |    0000C63B  ___curren |    0000C63D  ___curren
+     0000C63E  ___curren |    0000C63F  .int_0x48
+ASxxxx Linker V03.00/V05.40 + sdld,  page 28.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_INITIALIZED           0000C647    00000060 =          96. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     0000C647  _game_sta |    0000C648  _hay_gana |    0000C649  _estado_a
+     0000C64A  _hay_mast |    0000C64B  _hay_mast |    0000C64C  _selector
+     0000C64D  _seleccio |    0000C64E  _casillas |    0000C667  _indices 
+     0000C677  _total_mo |    0000C678  _mazo     |    0000C698  _jugador_
+     0000C699  _pieza_se |    0000C69A  _cpu_ha_j |    0000C69B  _total_se
+     0000C69C  _valor    |    0000C69E  _player_i |    0000C69F  _es_mi_tu
+     0000C6A0  .curx     |    0000C6A1  .cury     |    0000C6A2  ___render
+     0000C6A3  .fg_colou |    0000C6A3  __current |    0000C6A4  .bg_colou
+     0000C6A5  .draw_mod |    0000C6A6  __map_til
+ASxxxx Linker V03.00/V05.40 + sdld,  page 29.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HRAM12                00000000    00000003 =           3. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     0000FF90  __current |    0000FF92  __shadow_
+ASxxxx Linker V03.00/V05.40 + sdld,  page 30.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER_SIO0           00000000    00000008 =           8. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 31.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_FONT_HEADER0          00000000    00000003 =           3. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 32.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+_HEADER_LCD0           00000000    00000003 =           3. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 33.
+
+Files Linked                              [ module(s) ]
+
+/opt/gbdk/lib/gb/crt0.o                   [ Runtime ]
+Onitama.o                                 [ Onitama ]
+
+
+Libraries Linked                          [ object file ]
+
+/opt/gbdk/lib/gb/gb.lib                   [ sfr.o ]
+/opt/gbdk/lib/sm83/sm83.lib               [ rand.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ cgb_palettes.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ serial.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ sio.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ nowait.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ set_data.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ font.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ fill_rect_bk.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ pad.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ metasprites.o ]
+/opt/gbdk/lib/sm83/sm83.lib               [ memcpy.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ color.o ]
+/opt/gbdk/lib/sm83/sm83.lib               [ puts.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ drawing_isr.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ f_ibm_sh.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ lcd.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ set_xy_t.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ cgb.o ]
+/opt/gbdk/lib/sm83/sm83.lib               [ div.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ set_bk_t.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ crlf.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ set_1bit_data.o ]
+/opt/gbdk/lib/gb/gb.lib                   [ fill_rect.o ]
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 34.
+
+User Base Address Definitions
+
+_DATA=0xC0A0
+_CODE=0x0200
+ASxxxx Linker V03.00/V05.40 + sdld,  page 35.
+
+User Global Definitions
+
+_shadow_OAM=0xC000
+.STACK=0xE000
+.refresh_OAM=0xFF80
+
+

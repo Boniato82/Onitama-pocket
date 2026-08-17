@@ -1,0 +1,425 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 1
+Hexadecimal [32-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =   00002710 L
+    .__.ABS.                                                    =   00000000 G
+    .__.CPU.                                                    =   00000000 L
+    .__.H$L.                                                    =   00000000 L
+  0 _BOAR                                                           00000070 GR
+  0 _COBRA                                                          000000F6 GR
+  0 _CRAB                                                           00000063 GR
+  0 _CRANE                                                          0000008A GR
+    _DIV_REG                                                        ******** GX
+  0 _DRAGON                                                         00000038 GR
+  0 _EEL                                                            000000C0 GR
+  0 _ELEPHANT                                                       00000047 GR
+  0 _FROG                                                           00000097 GR
+  0 _GOOSE                                                          000000A6 GR
+  0 _HORSE                                                          000000B3 GR
+    _LCDC_REG                                                       ******** GX
+    _LY_REG                                                         ******** GX
+  0 _MANTIS                                                         0000007D GR
+  0 _MONKEY                                                         00000056 GR
+    _NR10_REG                                                       ******** GX
+    _NR11_REG                                                       ******** GX
+    _NR12_REG                                                       ******** GX
+    _NR13_REG                                                       ******** GX
+    _NR14_REG                                                       ******** GX
+    _NR50_REG                                                       ******** GX
+    _NR51_REG                                                       ******** GX
+    _NR52_REG                                                       ******** GX
+  0 _OX                                                             000000E9 GR
+  0 _RABBIT                                                         000000CD GR
+  0 _ROOSTER                                                        000000DC GR
+  0 _TIGER                                                          00000029 GR
+    _VBK_REG                                                        ******** GX
+    ___current_base_prop                                            ******** GX
+    ___current_base_tile                                            ******** GX
+    ___current_metasprite                                           ******** GX
+    ___memcpy                                                       ******** GX
+    ___move_metasprite                                              ******** GX
+  0 ___str_4                                                        00003F33 R
+    __cpu                                                           ******** GX
+    __io_in                                                         ******** GX
+    __io_out                                                        ******** GX
+    __io_status                                                     ******** GX
+    __map_tile_offset                                               ******** GX
+    __modsint                                                       ******** GX
+  7 __xinit__casillas_tablero                                       00000007 R
+  7 __xinit__cpu_ha_jugado                                          00000053 R
+  7 __xinit__es_mi_turno                                            00000058 R
+  7 __xinit__estado_anterior_A                                      00000002 R
+  7 __xinit__game_state                                             00000000 R
+  7 __xinit__hay_ganador                                            00000001 R
+  7 __xinit__hay_master_azul                                        00000004 R
+  7 __xinit__hay_master_rojo                                        00000003 R
+  7 __xinit__indices                                                00000020 R
+  7 __xinit__jugador_activo                                         00000051 R
+  7 __xinit__mazo                                                   00000031 R
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 2
+Hexadecimal [32-Bits]
+
+Symbol Table
+
+  7 __xinit__pieza_seleccionada                                     00000052 R
+  7 __xinit__player_is_host                                         00000057 R
+  7 __xinit__selecciona_derecha                                     00000006 R
+  7 __xinit__selector_fijo_activo                                   00000005 R
+  7 __xinit__total_movimientos_cpu                                  00000030 R
+  7 __xinit__total_seguros                                          00000054 R
+  7 __xinit__valor                                                  00000055 R
+  0 _actualizar_cartas_visual                                       00003B03 GR
+  0 _actualizar_cursores                                            0000469A GR
+    _add_SIO                                                        ******** GX
+  1 _alfa_global                                                    000003DA GR
+  0 _aplicar_movimiento_simulado                                    00005249 GR
+  0 _aplicar_paletas_juego                                          00003809 GR
+  1 _atributos_AZUL                                                 0000047F GR
+  1 _atributos_AZUL2                                                00000495 GR
+  1 _atributos_BLUE_WINS                                            00000535 GR
+  1 _atributos_CARTAS_AZUL                                          000004B5 GR
+  1 _atributos_CARTAS_ROJO                                          000004DD GR
+  1 _atributos_CARTA_LATERAL_AZUL                                   00000505 GR
+  1 _atributos_CARTA_LATERAL_ROJA                                   00000515 GR
+  1 _atributos_FONDO_CARTA_VACIO                                    00000525 GR
+  1 _atributos_NARANJA                                              000004AD GR
+  1 _atributos_RED_WINS                                             0000054D GR
+  1 _atributos_ROJO                                                 00000469 GR
+  1 _atributos_ROJO2                                                0000049D GR
+  1 _atributos_VERDE                                                000004A5 GR
+  0 _azul                                                           000037F5 GR
+  0 _azul2_pal                                                      00003799 GR
+  0 _azul_pal                                                       00003781 GR
+  1 _beta_global                                                    000003DC GR
+  0 _blue_wins_tiles                                                000011FF GR
+  0 _boar2_tiles                                                    000022F7 GR
+  0 _boar_tiles                                                     000021F7 GR
+  1 _cantidad                                                       0000044E GR
+  0 _cargar_cursores                                                00003E44 GR
+  0 _cargar_elementos                                               0000399C GR
+  0 _cargar_graficos_juego                                          00000000 GR
+  1 _carta_actual                                                   0000034A GR
+  0 _carta_boar                                                     0000006A GR
+  0 _carta_cobra                                                    000000F0 GR
+  0 _carta_crab                                                     0000005D GR
+  0 _carta_crane                                                    00000084 GR
+  0 _carta_dragon                                                   00000030 GR
+  0 _carta_eel                                                      000000BA GR
+  0 _carta_elephant                                                 0000003F GR
+  0 _carta_frog                                                     00000091 GR
+  0 _carta_goose                                                    0000009E GR
+  0 _carta_horse                                                    000000AD GR
+  0 _carta_mantis                                                   00000077 GR
+  0 _carta_map                                                      000015E7 GR
+  0 _carta_monkey                                                   0000004E GR
+  0 _carta_ox                                                       000000E3 GR
+  0 _carta_rabbit                                                   000000C7 GR
+  0 _carta_rooster                                                  000000D4 GR
+  1 _carta_temp_sim                                                 00000400 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 3
+Hexadecimal [32-Bits]
+
+Symbol Table
+
+  0 _carta_tiger                                                    00000025 GR
+  0 _cartas_azul_pal                                                000037D9 GR
+  1 _cartas_partida                                                 00000340 GR
+  0 _cartas_rojo_pal                                                000037E1 GR
+  1 _cartas_sim                                                     000003E2 GR
+  1 _cartas_sim2                                                    000003EC GR
+  1 _cartas_sim3                                                    000003F6 GR
+  2 _casillas_tablero                                               00000007 GR
+  0 _casillas_tablero_inicial                                       0000000C GR
+    _cls                                                            ******** GX
+  0 _cobra2_tiles                                                   000034F7 GR
+  0 _cobra_tiles                                                    000033F7 GR
+  0 _comprobar_victoria                                             00004A4A GR
+  0 _comprobar_victoria_sim                                         00005419 GR
+  1 _contador                                                       00000005 GR
+  0 _copiar_tablero                                                 0000540C GR
+  1 _copiar_tablero_x                                               00000458 GR
+  1 _copiar_tablero_y                                               00000459 GR
+    _cpu_fast                                                       ******** GX
+  2 _cpu_ha_jugado                                                  00000053 GR
+  0 _crab2_tiles                                                    00001AF7 GR
+  0 _crab_tiles                                                     000019F7 GR
+  0 _crane2_tiles                                                   000020F7 GR
+  0 _crane_tiles                                                    00001FF7 GR
+  1 _cursor_x                                                       0000000A GR
+  1 _cursor_y                                                       0000000B GR
+  0 _delay_frames                                                   00003EC6 GR
+  1 _destino                                                        00000009 GR
+  1 _destino_x                                                      0000034E GR
+  1 _destino_x_peligro                                              0000045E GR
+  1 _destino_y                                                      0000034F GR
+  1 _destino_y_peligro                                              0000045F GR
+  0 _dragon2_tiles                                                  000018F7 GR
+  0 _dragon_tiles                                                   000017F7 GR
+  1 _dx                                                             00000451 GR
+  1 _dy                                                             00000452 GR
+  0 _eel2_tiles                                                     00002CF7 GR
+  0 _eel_tiles                                                      00002BF7 GR
+  0 _ejecutar_minimax                                               00005FE5 GR
+  0 _ejecutar_turno_cpu                                             00004C52 GR
+  0 _elephant2_tiles                                                00001CF7 GR
+  0 _elephant_tiles                                                 00001BF7 GR
+  1 _encontrado                                                     00000356 GR
+  1 _era_captura                                                    000003E0 GR
+  1 _era_captura_cpu                                                000003E1 GR
+  1 _es_captura                                                     00000450 GR
+  2 _es_mi_turno                                                    00000058 GR
+  0 _es_turno_cpu                                                   00004ACD GR
+  2 _estado_anterior_A                                              00000002 GR
+  0 _evaluar_estatico                                               00005A63 GR
+  0 _evaluar_intercambio_basico                                     00006548 GR
+    _fill_bkg_rect                                                  ******** GX
+  0 _fondo_carta_vacio                                              000037E9 GR
+  0 _fondo_map                                                      00001033 GR
+  0 _fondo_pal                                                      000037D1 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 4
+Hexadecimal [32-Bits]
+
+Symbol Table
+
+  0 _fondo_tiles                                                    00000F73 GR
+  0 _fondo_vacio_carta_map                                          000011EF GR
+  0 _fondo_vacio_carta_tiles                                        000011DF GR
+  0 _fondo_vacio_map                                                000011DB GR
+  0 _fondo_vacio_tiles                                              0000119B GR
+  0 _frog2_tiles                                                    000026F7 GR
+  0 _frog_tiles                                                     000025F7 GR
+  2 _game_state                                                     00000000 GR
+  1 _gen_cantidad                                                   0000044D GR
+  1 _gen_carta                                                      0000044B GR
+  1 _gen_destino_pieza                                              0000044A GR
+  1 _gen_destino_x                                                  00000448 GR
+  1 _gen_destino_y                                                  00000449 GR
+  1 _gen_dx                                                         00000446 GR
+  1 _gen_dy                                                         00000447 GR
+  0 _generar_movimientos_azul                                       000057EE GR
+  0 _generar_movimientos_rojo                                       00005563 GR
+  0 _goose2_tiles                                                   000028F7 GR
+  0 _goose_tiles                                                    000027F7 GR
+  0 _handle_input                                                   0000458D GR
+  2 _hay_ganador                                                    00000001 GR
+  2 _hay_master_azul                                                00000004 GR
+  1 _hay_master_azul_sim                                            0000045B GR
+  2 _hay_master_rojo                                                00000003 GR
+  1 _hay_master_rojo_sim                                            0000045A GR
+  0 _horse2_tiles                                                   00002AF7 GR
+  0 _horse_tiles                                                    000029F7 GR
+  1 _i                                                              00000000 GR
+  1 _indice_carta_usada                                             00000350 GR
+  2 _indices                                                        00000020 GR
+  0 _inicio_partida                                                 00004347 GR
+  0 _init_cgb                                                       00003ED0 GR
+    _initrand                                                       ******** GX
+  1 _input                                                          00000007 GR
+  0 _intro                                                          00003EF3 GR
+  1 _j                                                              00000001 GR
+    _joypad                                                         ******** GX
+  0 _juego                                                          0000445F GR
+  2 _jugador_activo                                                 00000051 GR
+  1 _k                                                              00000003 GR
+  1 _k_puede_llegar_templo                                          00000461 GR
+  1 _link_carta                                                     00000468 GR
+  1 _link_dx                                                        00000466 GR
+  1 _link_dy                                                        00000467 GR
+  0 _link_enviar_movimiento                                         00006BC7 GR
+  1 _link_ox                                                        00000464 GR
+  1 _link_oy                                                        00000465 GR
+  0 _link_recibir_movimiento                                        00006C54 GR
+  0 _link_sync_inicial                                              00006B43 GR
+  1 _lista_azul                                                     00000273 GR
+  1 _lista_rojo2                                                    000001AB GR
+  1 _m                                                              000000DE GR
+  0 _main                                                           00004ADF GR
+  1 _mal_intercambio                                                00000463 GR
+  0 _mantis2_tiles                                                  000024F7 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 5
+Hexadecimal [32-Bits]
+
+Symbol Table
+
+  0 _mantis_tiles                                                   000023F7 GR
+  0 _master_azul_map                                                000015E3 GR
+  0 _master_azul_tiles                                              000015A3 GR
+  0 _master_rojo_en_peligro_sim                                     000052D9 GR
+  0 _master_rojo_map                                                0000155B GR
+  0 _master_rojo_tiles                                              0000151B GR
+  2 _mazo                                                           00000031 GR
+  1 _mejor_mov                                                      0000033B GR
+  1 _mejor_nivel2_sim                                               0000040E GR
+  1 _mejor_nivel3_sim                                               00000410 GR
+  1 _mejor_valor                                                    000003D8 GR
+  0 _menu_2players                                                  00006926 GR
+  0 _menu_linkgame                                                  00006A71 GR
+  0 _mezclar_indices                                                0000440D GR
+  1 _modo_juego                                                     00000008 GR
+  0 _monkey2_tiles                                                  00001EF7 GR
+  0 _monkey_tiles                                                   00001DF7 GR
+  1 _mov_azul_sim                                                   00000402 GR
+  1 _mov_rojo2_sim                                                  00000407 GR
+  0 _movimiento_valido                                              0000463A GR
+  1 _movimientos_cpu                                                00000016 GR
+  1 _movimientos_seguros                                            000000E3 GR
+  1 _mx                                                             00000357 GR
+  1 _mx_local                                                       00000456 GR
+  1 _my                                                             00000358 GR
+  1 _my_local                                                       00000457 GR
+  0 _naranja_pal                                                    00003791 GR
+  1 _nn_sim                                                         00000413 GR
+    _nowait_int_handler                                             ******** GX
+  1 _ord_destino                                                    00000417 GR
+  1 _ord_i                                                          00000414 GR
+  1 _ord_j                                                          00000415 GR
+  1 _ord_pieza                                                      00000416 GR
+  1 _ord_temp_mov                                                   00000440 GR
+  1 _ord_temp_pri                                                   00000445 GR
+  0 _ordenar_movimientos_cpu                                        00005DBC GR
+  1 _origen_x                                                       0000034C GR
+  1 _origen_y                                                       0000034D GR
+  1 _otra_carta_index                                               00000453 GR
+  0 _ox2_tiles                                                      000032F7 GR
+  0 _ox_tiles                                                       000031F7 GR
+  0 _pal_bkg_white                                                  00003769 GR
+  0 _pantalla_titulo                                                00003F7A GR
+  1 _peligro_actual                                                 00000359 GR
+  1 _peligro_despues_sim                                            0000035A GR
+  0 _peon_azul_map                                                  0000159F GR
+  0 _peon_azul_tiles                                                0000155F GR
+  0 _peon_rojo_map                                                  00001517 GR
+  0 _peon_rojo_tiles                                                000014D7 GR
+  1 _peor_ataque                                                    00000454 GR
+  1 _pieza                                                          00000351 GR
+  1 _pieza_destino                                                  0000044F GR
+  1 _pieza_en_peligro                                               00000462 GR
+  1 _pieza_mov_sim                                                  00000460 GR
+  0 _pieza_roja_en_peligro_sim                                      0000645D GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 6
+Hexadecimal [32-Bits]
+
+Symbol Table
+
+  2 _pieza_seleccionada                                             00000052 GR
+  2 _player_is_host                                                 00000057 GR
+  0 _posicion_ejercitos_visual                                      00003CCC GR
+  1 _posicion_tropa_x                                               00000014 GR
+  1 _posicion_tropa_y                                               00000015 GR
+  1 _prioridades                                                    00000418 GR
+  0 _procesar_seleccion                                             00004794 GR
+  1 _profundidad_minimax                                            00000355 GR
+  1 _punt_sim                                                       0000040C GR
+    _puts                                                           ******** GX
+  1 _px                                                             0000000C GR
+  1 _py                                                             0000000D GR
+  1 _r                                                              00000002 GR
+  0 _rabbit2_tiles                                                  00002EF7 GR
+  0 _rabbit_tiles                                                   00002DF7 GR
+    _rand                                                           ******** GX
+    _receive_byte                                                   ******** GX
+  0 _red_wins_tiles                                                 0000135F GR
+  0 _reseteo_juego                                                  00004B30 GR
+  1 _resultado_sim                                                  00000412 GR
+  0 _rival_puede_ganar_templo_con_carta                             000054AC GR
+  1 _rng_seed                                                       00000012 GR
+  0 _rojo                                                           000037F1 GR
+  0 _rojo2_pal                                                      000037A1 GR
+  0 _rojo_pal                                                       00003779 GR
+  0 _rooster2_tiles                                                 000030F7 GR
+  0 _rooster_tiles                                                  00002FF7 GR
+  0 _seleccion_2players_map                                         00000CE1 GR
+  0 _seleccion_2players_tiles                                       00000AE1 GR
+  0 _seleccion_link_map                                             00000F1D GR
+  0 _seleccion_link_tiles                                           00000D1D GR
+  0 _seleccion_modo_map                                             00000AA5 GR
+  0 _seleccion_modo_tiles                                           00000865 GR
+  2 _selecciona_derecha                                             00000006 GR
+  0 _seleccionar_modo                                               00004146 GR
+  2 _selector_fijo_activo                                           00000005 GR
+  1 _selector_fijo_x                                                00000010 GR
+  1 _selector_fijo_y                                                00000011 GR
+    _send_byte                                                      ******** GX
+    _set_bkg_data                                                   ******** GX
+    _set_bkg_palette                                                ******** GX
+    _set_bkg_tiles                                                  ******** GX
+    _set_interrupts                                                 ******** GX
+    _set_sprite_data                                                ******** GX
+    _set_sprite_palette                                             ******** GX
+  0 _sfx_captura                                                    0000688A GR
+  0 _sfx_derrota                                                    000068CA GR
+  0 _sfx_mover_pieza                                                0000684D GR
+  0 _sfx_mover_pieza_rojo                                           0000686D GR
+  0 _sfx_sable                                                      000068EA GR
+  0 _sfx_victoria                                                   000068AA GR
+    _shadow_OAM                                                     ******** GX
+  0 _sprite_cursor_carta_pal                                        00003801 GR
+  0 _sprite_cursor_pal                                              000037F9 GR
+  0 _sprite_linea_metasprite0                                       00003753 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 7
+Hexadecimal [32-Bits]
+
+Symbol Table
+
+  0 _sprite_linea_metasprites                                       00003767 GR
+  0 _sprite_linea_tiles                                             00003743 GR
+  0 _sprite_modo_pal                                                000037A9 GR
+  0 _sprite_modo_pal_azul                                           000037C9 GR
+  0 _sprite_modo_pal_naranja                                        000037C1 GR
+  0 _sprite_modo_pal_rojo                                           000037B1 GR
+  0 _sprite_modo_pal_verde                                          000037B9 GR
+  0 _sprite_selector_carta_metasprite0                              000036FD GR
+  0 _sprite_selector_carta_metasprites                              00003741 GR
+  0 _sprite_selector_carta_tiles                                    0000364D GR
+  0 _sprite_selector_metasprite0                                    00003637 GR
+  0 _sprite_selector_metasprites                                    0000364B GR
+  0 _sprite_selector_modo_metasprite0                               00000F69 GR
+  0 _sprite_selector_modo_metasprites                               00000F71 GR
+  0 _sprite_selector_modo_tiles                                     00000F59 GR
+  0 _sprite_selector_tiles                                          000035F7 GR
+  1 _tablero_intercambio                                            0000035B GR
+  1 _tablero_intercambio2                                           00000374 GR
+  1 _tablero_sim                                                    0000038D GR
+  1 _tablero_sim2                                                   000003A6 GR
+  1 _tablero_sim3                                                   000003BF GR
+  1 _temp                                                           00000004 GR
+  0 _tiger2_tiles                                                   000016F7 GR
+  0 _tiger_tiles                                                    000015F7 GR
+  1 _tile_x                                                         00000352 GR
+  1 _tile_y                                                         00000353 GR
+  0 _titulo_map                                                     000006FD GR
+  0 _titulo_pal                                                     00003771 GR
+  0 _titulo_tiles                                                   000000FD GR
+  1 _total_azul                                                     000003DF GR
+  2 _total_movimientos_cpu                                          00000030 GR
+  1 _total_rojo2                                                    000003DE GR
+  2 _total_seguros                                                  00000054 GR
+  1 _turno_de_juego                                                 00000354 GR
+  2 _valor                                                          00000055 GR
+  0 _verde_pal                                                      00003789 GR
+    _vsync                                                          ******** GX
+    _waitpadup                                                      ******** GX
+  0 _wins_map                                                       000014BF GR
+  1 _x                                                              0000000E GR
+  1 _x_sim                                                          0000045C GR
+  1 _y                                                              0000000F GR
+  1 _y_sim                                                          0000045D GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 8
+Hexadecimal [32-Bits]
+
+Area Table
+
+   0 _CODE                                      size     6D87   flags    0
+   1 _DATA                                      size      565   flags    0
+   2 _INITIALIZED                               size       59   flags    0
+   3 _DABS                                      size        0   flags    8
+   4 _HOME                                      size        0   flags    0
+   5 _GSINIT                                    size        0   flags    0
+   6 _GSFINAL                                   size        0   flags    0
+   7 _INITIALIZER                               size       59   flags    0
+   8 _CABS                                      size        0   flags    8
+
