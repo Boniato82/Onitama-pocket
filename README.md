@@ -19,10 +19,10 @@ You also lose if your Master is captured or opponent Master reach your temple, s
 
 **Controls**
 Game Boy / Emulator
-    D-Pad → Move cursor
-    A Button → Select a piece, confirm move
-    B Button →  Change selected card for movement
-    SELECT+A+B → Reset game and return to title screen (hold them for a second)
+* D-Pad → Move cursor
+* A Button → Select a piece, confirm move
+* B Button →  Change selected card for movement
+* SELECT+A+B → Reset game and return to title screen (hold them for a second)
 
 **Changelog**
 * Version 1.0 (initial release): 12-4-26 (DD-MM-YY)
