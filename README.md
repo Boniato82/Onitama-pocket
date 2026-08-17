@@ -25,8 +25,8 @@ Game Boy / Emulator
     SELECT+A+B → Reset game and return to title screen (hold them for a second)
 
 **Changelog**
-    Version 1.0 (initial release): 12-4-26 (DD-MM-YY)
-    Version 1.2: 13-5-26 (DD-MM-YY)
+* Version 1.0 (initial release): 12-4-26 (DD-MM-YY)
+* Version 1.2: 13-5-26 (DD-MM-YY)
         Added Game link mode for 2 players.
             tested with: 
                 real hardware + FPGA (Game boy Pocket, GBA SP, FPGBC)
